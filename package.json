@@ -1,0 +1,20 @@
+{
+  "name": "mokepon",
+  "version": "1.0.0",
+  "description": "Es una juego de Mokepones, con 3 personajes y distintos ataques, el objetivo es seleccionar un personaje y el enemigo seleccionará también uno y se tendrán que atacar entre sí, para poder ganar.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FlexxN1/Mokepon.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FlexxN1/Mokepon/issues"
+  },
+  "homepage": "https://github.com/FlexxN1/Mokepon#readme"
+}
