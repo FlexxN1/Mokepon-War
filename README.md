@@ -3,7 +3,7 @@
 Es una juego de Mokepones, con 3 personajes y distintos ataques, el objetivo es seleccionar un personaje y el enemigo seleccionará también uno y se tendrán que atacar entre sí, para poder ganar.
 
 ## View project 🚀🙋🏻‍♂️
-## [Deploy](https://flexx-e-commerce.netlify.app/)
+## [Deploy]()
 
 ## Installation ⚖
 Clone yardsales:
