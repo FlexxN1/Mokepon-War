@@ -1,6 +1,6 @@
-# Mokepon 🕹🎮
+# Mokepon War 🕹🎮
 
-Es una SPA construida en React.js con el objetivo de simular una tienda virtual de comercio.
+Es una juego de Mokepones, con 3 personajes y distintos ataques, el objetivo es seleccionar un personaje y el enemigo seleccionará también uno y se tendrán que atacar entre sí, para poder ganar.
 
 ## View project 🚀🙋🏻‍♂️
 ## [Deploy](https://flexx-e-commerce.netlify.app/)
