@@ -6,7 +6,7 @@ Es una juego de Mokepones, con 3 personajes y distintos ataques, el objetivo es 
 ## [Deploy]()
 
 ## Installation ⚖
-Clone yardsales:
+Clone Mokepon-War:
 ```
 git clone https://github.com/FlexxN1/Mokepon.git
  ```
@@ -16,7 +16,7 @@ Install dependencies:
 npm install
 ```
 
-Local yardsales deploy:
+Local Mokepon-War deploy:
 ```
 npm run start
 ```
