@@ -90,17 +90,22 @@ function iniciarJuego() {
   botonReiniciar.addEventListener("click", reiniciarJuego);
 }
 function seleccionarMascotaJugador() {
-  sectionSeleccionarMascota.style.display = "none";
-  sectionSeleccionarAtaque.style.display = "flex";
+
   if (inputHipodoge.checked) {
     spanMascotaJugador.innerHTML = inputHipodoge.id;
     mascotaJugador = inputHipodoge.id;
+    sectionSeleccionarMascota.style.display = "none";
+    sectionSeleccionarAtaque.style.display = "flex";
   } else if (inputCapipepo.checked) {
     spanMascotaJugador.innerHTML = inputCapipepo.id;
     mascotaJugador = inputCapipepo.id;
+    sectionSeleccionarMascota.style.display = "none";
+    sectionSeleccionarAtaque.style.display = "flex";
   } else if (inputRatigueya.checked) {
     spanMascotaJugador.innerHTML = inputRatigueya.id;
     mascotaJugador = inputRatigueya.id;
+    sectionSeleccionarMascota.style.display = "none";
+    sectionSeleccionarAtaque.style.display = "flex";
   } else {
     alert("Selecciona una mascota");
   }
