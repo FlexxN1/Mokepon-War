@@ -134,12 +134,19 @@ input:checked + label {
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
-  width: 100px;
+  width: 150px;
+  height: 74px;
   margin-top: 10px;
 }
 .button-control {
-  width: 30px;
-  
+  width: 36px;
+  background-color: #ffa800;
+  border: 1px solid #4a2d01;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 .mid {
   flex-grow: 1;
