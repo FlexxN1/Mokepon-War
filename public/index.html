@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="../assets/Icon1.png" type="image/x-icon">
   </head>
   <body>
+    <!-- SECCION SELECIONAR MASCOTA JUGADOR -->
     <section id="seleccionar-mascota">
       <h1 class="titulo">Mokepon</h1>
       <h2 class="subtitulo">Elige tu mascota:</h2>
@@ -14,17 +15,37 @@
       </div>
       <button id="boton-mascota">Seleccionar</button>
     </section>
+
+    <!-- SECTION CANVAS -->
+    <section id="ver-mapa">
+      <h1 class="titulo">Recorre el mapa con tu Mokepon</h1>
+      <canvas id="mapa"></canvas>
+      <div class="map-controls">
+        <button onmouseup="detenerMovimiento()" onmousedown="moveLeft()" class="button-control" id="left">←</button>
+        <button onmouseup="detenerMovimiento()" onmousedown="moveUp()" class="button-control" id="up">↑</button>
+        <button onmouseup="detenerMovimiento()" onmousedown="moveDown()" class="button-control" id="down">↓</button>
+        <button onmouseup="detenerMovimiento()" onmousedown="moveRight()" class="button-control" id="right">→</button>
+      </div>
+    </section>
+
+    <!-- SECTION CHOOSE ATTACK -->
     <section id="seleccionar-ataque">
       <h1 class="titulo">Mokepon</h1>
       <h2 class="subtitulo">Elige tu ataque:</h2>
       <div id="contenedorAtaques" class="tarjetas-ataques">
       </div>
+
+    <!-- SECTION MESSAGE -->
       <div id="mensajes">
         <p id="resultado">Mucha suerte</p>
+
+    <!-- SECTION RESTART -->
         <section id="reiniciar">
           <button id="boton-reiniciar">Reiniciar</button>
         </section>
       </div>
+
+    <!-- SECTION COMBAT -->
       <div class="ataques">
         <div class="ataques-jugador">
           <p id="vidas-jugador">0</p>
