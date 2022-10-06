@@ -130,7 +130,20 @@ input:checked + label {
 #mapa {
   border: 2px solid white;
 }
-
+.map-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  width: 100px;
+  margin-top: 10px;
+}
+.button-control {
+  width: 30px;
+  
+}
+.mid {
+  flex-grow: 1;
+}
 @media (max-width: 560px) {
   .tarjetas, .tarjetas-ataques, .tarjeta-de-mokepon {
     flex-direction: column;
