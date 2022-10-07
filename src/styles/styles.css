@@ -13,7 +13,7 @@ body {
   height: 750px;
 }
 
-.titulo {
+.titulo, .titulo2 {
   color: white;
   font-size: 4rem;
   font-family: 'Fredoka One', cursive;
@@ -149,6 +149,9 @@ input:checked + label {
 @media (max-width: 560px) {
   .tarjetas, .tarjetas-ataques, .tarjeta-de-mokepon{
     flex-direction: column;
+  }
+  .titulo2 {
+    font-size: 3rem;
   }
 }
 @media (max-width: 400px) {
