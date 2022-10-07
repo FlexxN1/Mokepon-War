@@ -5,6 +5,7 @@
     <title>MOKEPON!</title>
     <link rel="stylesheet" href="../src/styles/styles.css" />
     <link rel="shortcut icon" href="../assets/Icon1.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <!-- SECCION SELECIONAR MASCOTA JUGADOR -->
@@ -18,13 +19,13 @@
 
     <!-- SECTION CANVAS -->
     <section id="ver-mapa">
-      <h1 class="titulo">Recorre el mapa con tu Mokepon</h1>
+      <h2 class="titulo">Recorre el mapa con tu Mokepon</h2>
       <canvas id="mapa"></canvas>
-      <div class="map-controls">
+      <button onmouseup="detenerMovimiento()" onmousedown="moveUp()" class="button-control mid" id="up">↑</button>
+      <div>
         <button onmouseup="detenerMovimiento()" onmousedown="moveLeft()" class="button-control" id="left">←</button>
-        <button onmouseup="detenerMovimiento()" onmousedown="moveUp()" class="button-control mid" id="up">↑</button>
-        <button onmouseup="detenerMovimiento()" onmousedown="moveRight()" class="button-control" id="right">→</button>
         <button onmouseup="detenerMovimiento()" onmousedown="moveDown()" class="button-control mid" id="down">↓</button>
+        <button onmouseup="detenerMovimiento()" onmousedown="moveRight()" class="button-control" id="right">→</button>
       </div>
     </section>
 
