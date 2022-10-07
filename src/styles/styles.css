@@ -10,17 +10,18 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 750px;
 }
 
 .titulo {
   color: white;
-  font-size: 32px;
+  font-size: 4rem;
   font-family: 'Fredoka One', cursive;
 }
 
 .subtitulo {
   color: white;
-  font-size: 20px;
+  font-size: 1.5rem;
 }
 
 .tarjetas, .tarjetas-ataques {
@@ -49,14 +50,14 @@ body {
 }
 
 #boton-mascota {
-  width: 180px;
-  height: 40px;
+  width: 194px;
+  height: 44px;
   border-radius: 20px;
   background: transparent;
   border: 2px solid white;
   color: white;
   font-family: 'Poppins', sans-serif;
-  margin-top: 30px;
+  margin-top: 52px;
   cursor: pointer;
 }
 
@@ -119,9 +120,41 @@ input:checked + label {
   flex-direction: column;
   align-items: center;
 }
+#mapa {
+  box-shadow: 2px 2px 10px 1px #000;
+}
+#ver-mapa {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
+#ver-mapa button{
+  width: 100px;
+  height: 50px;
+  margin-top: 10px;
+  background-color: #ffa800;
+  border: 1px solid #4a2d01;
+  color: #000;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.button-control:active{
+  background-color: #4a2d01;
+  color: white;
+}
 @media (max-width: 560px) {
-  .tarjetas, .tarjetas-ataques {
+  .tarjetas, .tarjetas-ataques, .tarjeta-de-mokepon{
+    flex-direction: column;
+  }
+}
+@media (max-width: 400px) {
+  #ver-mapa div{
+    display: flex;
+    align-items: center;
     flex-direction: column;
   }
 }
