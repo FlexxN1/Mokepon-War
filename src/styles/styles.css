@@ -142,11 +142,16 @@ input:checked + label {
   width: 36px;
   background-color: #ffa800;
   border: 1px solid #4a2d01;
+  color: #000;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
+}
+.button-control:active{
+  background-color: #4a2d01;
+  color: white;
 }
 .mid {
   flex-grow: 1;
