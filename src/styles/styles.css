@@ -13,7 +13,7 @@ body {
   height: 750px;
 }
 
-.titulo {
+.titulo, .titulo2 {
   color: white;
   font-size: 4rem;
   font-family: 'Fredoka One', cursive;
