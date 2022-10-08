@@ -369,7 +369,6 @@ function pintarCanvas() {
 /*controls.forEach((control) => {
   control.addEventListener("click", () => moverCapipepo(control.id));
 });
-
 function moverCapipepo(direction){
   switch(direction){
     case "up":
