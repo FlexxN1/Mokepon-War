@@ -11,10 +11,13 @@
     "url": "git+https://github.com/FlexxN1/Mokepon.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Flexx N1 <juandavidx40@gmail.com>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/FlexxN1/Mokepon/issues"
   },
-  "homepage": "https://github.com/FlexxN1/Mokepon#readme"
+  "homepage": "https://github.com/FlexxN1/Mokepon#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }
