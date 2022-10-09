@@ -378,9 +378,9 @@ function enviarPosicion(x, y){
 
             return mokeponesEnemigos;
           });
-      })
-    }
-  })
+      });
+    };
+  });
 };
 //FORMA MAS PRO XD
 /*controls.forEach((control) => {
