@@ -19,6 +19,7 @@ const controls = document.querySelectorAll('.button-control')
 
 let playerId = null;
 let mokepones = [];
+let mokeponesEnemigos = [];
 let ataqueEnemigo = [];
 let opcionDeMokepones;
 let inputHipodoge;
@@ -333,9 +334,10 @@ function pintarCanvas() {
     )
     mascotaJugadorObjeto.pintarMokepon();
     enviarPosicion(mascotaJugadorObjeto.x,mascotaJugadorObjeto.y)
-    hipodogeEnemigo.pintarMokepon();
-    capipepoEnemigo.pintarMokepon();
-    ratigueyaEnemigo.pintarMokepon();
+    
+    mokeponesEnemigos.forEach(function (mokepon){
+      mokepon.pintarMokepon();
+    });
 
     if(mascotaJugadorObjeto.velocidadX !== 0 || mascotaJugadorObjeto.velocidadY !== 0){
       revisarColision(hipodogeEnemigo)
@@ -360,7 +362,7 @@ function enviarPosicion(x, y){
       res.json()
         .then(function ({ enemigos }){
           console.log(enemigos);
-          enemigos.forEach(function (enemigo){
+          mokeponesEnemigos = enemigos.map(function (enemigo){
             let mokeponEnemigo = null;
             const mokeponNombre = enemigo.mokepon.nombre || "";
             if(mokeponNombre === "Hipodoge"){
@@ -374,11 +376,11 @@ function enviarPosicion(x, y){
             mokeponEnemigo.x = enemigo.x;
             mokeponEnemigo.y = enemigo.y;
 
-            mokeponEnemigo.pintarMokepon()
+            return mokeponesEnemigos;
           });
-      })
-    }
-  })
+      });
+    };
+  });
 };
 //FORMA MAS PRO XD
 /*controls.forEach((control) => {
