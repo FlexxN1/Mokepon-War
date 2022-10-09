@@ -15,8 +15,16 @@ class Player {
     asignarMokepon(mokepon){
         this.mokepon = mokepon
     }
-}
 
+    actualizarPosicion(x, y) {
+        this.x = x
+        this.y = y
+    }
+    
+    asignarAtaques(ataques){
+        this.ataques = ataques;
+    }
+}
 class Mokepon {
     constructor(nombre){
         this.nombre = nombre;
@@ -38,7 +46,7 @@ app.post("/mokepon/:playerId", (req, res) => {
     const playerId = req.params.playerId || "";
     const nombre = req.body.mokepon || "";
     const mokepon = new Mokepon(nombre);
-    
+
     const jugadorIndex = players.findIndex((player) => playerId === player.id);
     if(jugadorIndex >= 0){
         players[jugadorIndex].asignarMokepon(mokepon);
@@ -48,6 +56,45 @@ app.post("/mokepon/:playerId", (req, res) => {
     console.log(playerId)
     res.end()
 });
+
+app.post("/mokepon/:playerId/position", (req, res) => {
+    const playerId = req.params.playerId || ""
+    const x = req.body.x || 0
+    const y = req.body.y || 0
+
+    const jugadorIndex = players.findIndex((player) => playerId === player.id);
+
+    if (jugadorIndex >= 0) {
+        players[jugadorIndex].actualizarPosicion(x, y)
+    }
+
+    const enemigos = players.filter((player) => playerId !== player.id)
+
+    res.send({
+        enemigos
+    })
+})
+
+app.post("/mokepon/:playerId/ataques", (req, res) => {
+    const playerId = req.params.playerId || "";
+    const ataques = req.body.ataques || "";
+
+    const jugadorIndex = players.findIndex((player) => playerId === player.id);
+
+    if (jugadorIndex >= 0) {
+        players[jugadorIndex].asignarAtaques(ataques)
+    }
+
+    res.end()
+})
+
+app.get("/mokepon/:playerId/ataques", (req, res) => {
+    const playerId = req.params.playerId || "";
+    const player = players.find((player) => player.id === playerId)
+    res.send({
+        ataques: player.ataques || []
+    });
+})
 
 app.listen(8080, () => {
     console.log("Servidor funcionando")
