@@ -376,7 +376,7 @@ function enviarPosicion(x, y){
             mokeponEnemigo.x = enemigo.x;
             mokeponEnemigo.y = enemigo.y;
 
-            return mokeponesEnemigos;
+            return mokeponEnemigo;
           });
       });
     };
