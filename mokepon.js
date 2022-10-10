@@ -142,7 +142,7 @@ function iniciarJuego() {
 }
 
 function unirseAljuego(){
-  fetch("http://192.168.1.61:8080/join")
+  fetch("http://localhost:8080/join")
     .then(function (res){
       console.log(res);
       if(res.ok){
@@ -178,7 +178,7 @@ function seleccionarMascotaJugador() {
 }
 
 function selecionarMokepon(mascotaJugador){
-  fetch(`http://192.168.1.61:8080/mokepon/${playerId}`, {
+  fetch(`http://localhost:8080/mokepon/${playerId}`, {
     method: "post",
     headers: {
       "Content-Type": "application/json"
@@ -238,7 +238,7 @@ function secuenciaAtaque(){
 } 
 
 function enviarAtaques(){
-  fetch(`http://192.168.1.61:8080/mokepon/${playerId}/ataques`, {
+  fetch(`http://localhost:8080/mokepon/${playerId}/ataques`, {
     method: "post",
     headers: {
       "Content-Type": "application/json"
@@ -252,7 +252,7 @@ function enviarAtaques(){
 };
 
 function obtenerAtaques(){
-  fetch(`http://192.168.1.61:8080/mokepon/${enemigoId}/ataques`)
+  fetch(`http://localhost:8080/mokepon/${enemigoId}/ataques`)
     .then(function(res) {
       if(res.ok){
         res.json()
@@ -371,7 +371,7 @@ mokeponesEnemigos.forEach(function (mokepon)
 }
 
 function enviarPosicion(x, y){
-  fetch(`http://192.168.1.61:8080/mokepon/${playerId}/position`, {
+  fetch(`http://localhost:8080/mokepon/${playerId}/position`, {
     method: "post",
     headers: {
       "Content-Type": "application/json"
