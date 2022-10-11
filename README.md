@@ -30,7 +30,7 @@ npm run start
 ```
 node index.js
 ```
-para detener el servivdor, ejecuta el sigueinte comando
+para detener el servidor, ejecuta el siguiente comando
 ```
 Ctrol + C
 ```
