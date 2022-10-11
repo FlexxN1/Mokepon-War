@@ -10,8 +10,8 @@ consta de distintos ataques, entre ellos estan: 🔥, 💧, 🌱.
 ## Installation ⚖
 Clone Mokepon-War:
 ```
-git clone https://github.com/FlexxN1/Mokepon.git
- ```
+https://github.com/FlexxN1/Mokepon-War.git
+```
 
 Install dependencies:
 ```
