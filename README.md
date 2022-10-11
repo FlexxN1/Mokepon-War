@@ -30,6 +30,10 @@ npm run start
 ```
 node index.js
 ```
+para detener el servivdor, ejecuta el sigueinte comando
+```
+Ctrol + C
+```
 - Luego actualiza la pagina "si esta duplicada" o actualiza en tu dispositivo mobil, para que el script genere un ID random por cada usuario.
 - Seleccionan el Mokepon que mas les guste y ya pueden verse reflejados cada uno en el mapa.
 - Se pueden desplazar haciendo Click en los botones o pueden usar las teclas Flecha de su teclado.
