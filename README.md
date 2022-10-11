@@ -1,7 +1,5 @@
 # Mokepon War 🕹🎮
 
-![gndx.io](https://user-images.githubusercontent.com/10554486/181944426-ba1b32bf-0adf-44e5-b3b0-f99412932d78.png)
-
 Es una juego de Mokepones, con 3 personajes y distintos ataques, el objetivo es seleccionar un personaje y el enemigo seleccionará también uno y se tendrán que atacar entre sí, para poder ganar.
 
 consta de distintos ataques, entre ellos estan: 🔥, 💧, 🌱.
